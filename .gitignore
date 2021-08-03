@@ -1,6 +1,5 @@
 node_modules
 .temp
 .cache
-.github
 dist/
 yarn.lock
