@@ -18,4 +18,24 @@ module.exports = {
       ],
     }
   ],
+  '/LEETCODE/': [
+    {
+      text: '堆栈',
+      children: [
+        {
+          text: '703-数据流中的第K大元素',
+          link: '/LEETCODE/STACK/703-数据流中的第K大元素.md'
+        },
+      ]
+    },
+    {
+      text: '链表',
+      children: [
+        {
+          text: '141-环形链表',
+          link: '/LEETCODE/LINKEDLIST/141-环形链表.md'
+        },
+      ]
+    }
+  ]
 }

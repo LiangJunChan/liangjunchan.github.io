@@ -22,4 +22,8 @@ module.exports = [
     //   },
     // ],
   },
+  {
+    text: '算法学习',
+    link: '/LEETCODE/算法学习.md'
+  }
 ]
