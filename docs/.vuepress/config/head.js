@@ -5,6 +5,6 @@ module.exports = [
   ['meta', { name: 'author', content: '陈良军,chenliangjun', },],
   ['link', { rel: 'shortcut icon', type: 'image/x-icon', href: '/images/favicon.ico', },],
   // live2d-widget
-  ['link', { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" }],
-  ['script', { src: "https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js" }],
+  // ['link', { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" }],
+  // ['script', { src: "https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js" }],
 ]
