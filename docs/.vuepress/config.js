@@ -46,8 +46,8 @@ module.exports = {
       config.module
         .rule('images')
         .test(/\.(png|jpe?g|gif|webp)(\?.*)?$/i)
-        .use('url-loader')
-        .loader('url-loader')
+        // .use('url-loader')
+        // .loader('url-loader')
         // .tap(options => Object.assign(options, { limit: 10240 }));
     }
   }
