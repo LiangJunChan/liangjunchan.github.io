@@ -16,6 +16,15 @@ module.exports = {
           link: '/FE/自动化部署.md'
         }
       ],
+    },
+    {
+      text: '微前端',
+      children: [
+        {
+          text: '微前端-icestark初体验',
+          link: '微前端icestark初体验.md'
+        }
+      ],
     }
   ],
   '/LEETCODE/': [
