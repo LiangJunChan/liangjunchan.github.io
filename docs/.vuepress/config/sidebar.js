@@ -45,6 +45,15 @@ module.exports = {
           link: '/LEETCODE/LINKEDLIST/141-环形链表.md'
         },
       ]
+    },
+    {
+      text: '哈希表',
+      children: [
+        {
+          text: '242-有效的字母异位词',
+          link: '/LEETCODE/HASH/242-有效的字母异位词.md'
+        },
+      ]
     }
   ]
 }
