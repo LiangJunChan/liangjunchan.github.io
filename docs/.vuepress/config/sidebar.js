@@ -50,6 +50,10 @@ module.exports = {
       text: '哈希表',
       children: [
         {
+          text: '1-双数之和',
+          link: '/LEETCODE/HASH/1-双数之和.md'
+        },
+        {
           text: '242-有效的字母异位词',
           link: '/LEETCODE/HASH/242-有效的字母异位词.md'
         },
