@@ -25,6 +25,15 @@ module.exports = {
           link: '微前端icestark初体验.md'
         }
       ],
+    },
+    {
+      text: '前端杂谈',
+      children: [
+        {
+          text: '前端如何给图片添加水印?',
+          link: '/FE/前端水印.md'
+        }
+      ]
     }
   ],
   '/LEETCODE/': [
@@ -52,6 +61,10 @@ module.exports = {
         {
           text: '1-双数之和',
           link: '/LEETCODE/HASH/1-双数之和.md'
+        },
+        {
+          text: '15-三数之和',
+          link: '/LEETCODE/HASH/15-三数之和.md'
         },
         {
           text: '242-有效的字母异位词',
