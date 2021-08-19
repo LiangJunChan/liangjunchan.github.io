@@ -71,6 +71,15 @@ module.exports = {
           link: '/LEETCODE/HASH/242-有效的字母异位词.md'
         },
       ]
-    }
+    },
+    {
+      text: '树',
+      children: [
+        {
+          text: '98-验证二叉搜索树',
+          link: '/LEETCODE/TREE/98-验证二叉搜索树.md'
+        },
+      ]
+    },
   ]
 }
