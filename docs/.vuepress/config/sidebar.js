@@ -79,6 +79,14 @@ module.exports = {
           text: '98-验证二叉搜索树',
           link: '/LEETCODE/TREE/98-验证二叉搜索树.md'
         },
+        {
+          text: '235-二叉搜索树的最近公共祖先',
+          link: '/LEETCODE/TREE/235-二叉搜索树的最近公共祖先.md'
+        },
+        {
+          text: '236-二叉树的最近公共祖先',
+          link: '/LEETCODE/TREE/236-二叉树的最近公共祖先.md'
+        },
       ]
     },
   ]
