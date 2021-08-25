@@ -26,7 +26,7 @@ app.listen({ port: 7001 }, () => {
 上面中的`const router = require('./funcs/route');`我们在funcs目录下封装了一个route.js，里面主要做了两件事情：
 
 1. 以约定式路由的方式分析routes目录下的所有js文件拿到路由配置
-2. 每个文件中以get/post命名的方法路由名就是文件名，其他方法会用`/`分割并拼接在文件名后
+2. 每个文件中以get/post命名的函数路由名就是文件名，其他函数会用`/`分割并拼接在文件名后
 
 ```javascript
 // funcs/route.js
@@ -235,7 +235,7 @@ module.exports = {
     }
     connection.close();
   },
-	//这里是我们根据sequelize新增的方法
+	//这里是我们根据sequelize新增的函数
   sequelize: async ctx => {
     const result = await category.findAll({
       // attributes: ['name']
