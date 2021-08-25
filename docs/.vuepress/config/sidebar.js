@@ -32,6 +32,10 @@ module.exports = {
         {
           text: '前端如何给图片添加水印?',
           link: '/FE/前端水印.md'
+        },
+        {
+          text: 'Node+Mysql实践',
+          link: '/FE/Node查询Mysql实践.md'
         }
       ]
     }
