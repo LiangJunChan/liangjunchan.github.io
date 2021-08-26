@@ -467,3 +467,5 @@ export default function Apollo() {
 这里结合useQuery使用我们就会发现跟在刚刚的web页面上是差不多的了。至此我们就完成了整个的流程。最后前端得到的数据如图：
 
 ![3](./images/mysql/3.jpg)
+
+如果你是刚接触想快速对GraphQL有更多的了解，github上有一遍介绍「[爱GraphQL胜过REST](https://github.com/xitu/gold-miner/blob/master/article/2020/loving-graphql-more-than-rest.md)」可以帮助到你。
