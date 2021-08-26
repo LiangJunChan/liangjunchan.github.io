@@ -468,4 +468,4 @@ export default function Apollo() {
 
 ![3](./images/mysql/3.jpg)
 
-如果你是刚接触想快速对GraphQL有更多的了解，github上有一遍介绍「[爱GraphQL胜过REST](https://github.com/xitu/gold-miner/blob/master/article/2020/loving-graphql-more-than-rest.md)」可以帮助到你。
+如果你是刚接触想快速对GraphQL有更多的了解，github上有一篇「[爱GraphQL胜过REST](https://github.com/xitu/gold-miner/blob/master/article/2020/loving-graphql-more-than-rest.md)」可以帮助到你。
