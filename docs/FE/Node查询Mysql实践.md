@@ -16,6 +16,9 @@ const Koa = require('koa')
 const router = require('./funcs/route')
 
 const app = new Koa()
+const bodyParser = require("koa-bodyparser")
+
+app.use(bodyParser())
 app.use(router.routes())
 
 app.listen({ port: 7001 }, () => {
