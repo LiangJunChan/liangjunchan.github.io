@@ -69,4 +69,4 @@ WebGPU是WebGL的继承者，它们的目标类似，不过WebGPU提供了更加
 </html>
 ```
 
-![1](html+css可视化.assets/1.jpg)
+![1](images/1.jpg)
