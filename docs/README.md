@@ -21,5 +21,5 @@ features:
   details: Stay hungry,stay foolish.
 - title: 爱好
   details: 一个兴趣广泛滴程序员,B站(Earth良菌)可以看看我技术以外的兴趣哦.在这里,除了技术,什么都搞.
-footer: ISC Licensed | Copyright © 2021-present ChenLiangjun
+footer: ISC Licensed | Copyright © 2023-present ChenLiangjun
 ---

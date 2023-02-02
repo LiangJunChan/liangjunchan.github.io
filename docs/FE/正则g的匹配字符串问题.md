@@ -14,11 +14,9 @@ this.setState({selectItems: searchItems})
 
 其中,this.selectItems是下图的结果。那么如果e.target.value输入文本，得到的filter的结果数组是什么?
 
-![img](https://www.kdocs.cn/api/v3/office/copy/YVlpUklIeFE0WHN3SGJHSEVGbEVIaDYvS2wvK2dHYXlHc1VtdGJIQ3djTnlOR0pSajRZMy9JekNMb2NxNVlpSTR3cmEzN2E5WWQrQjVlc2JjOVEzY3dpQ1hXWHNJc2pQb2daYUl3ZWxZcUlnV2NScnArMUpNdVZjVjJwN09ERVlTN0pLOWpSYk1wQ3JzTzFEUnBPWEVHMDhNem1UbmtrVjc0dVlxa21xVGNzQlBIcXRUT3htY01KN203bjNRTFJvOFhvTGZBeTlQd3RSanNsQjVQTjF2UDdCekpIRmlGbjJuaEk2YUgyTlhQQU1oRm9oL3pyazcrVWpmYjJG/attach/object/02aa4f21fd306173cf68518388b5a4b8bcf04ba7)
+<img src="./images/g/g-1.png" alt="g-1" style="zoom:50%;" />结果只有一项：
 
-结果只有一项：
-
-![img](https://www.kdocs.cn/api/v3/office/copy/YVlpUklIeFE0WHN3SGJHSEVGbEVIaDYvS2wvK2dHYXlHc1VtdGJIQ3djTnlOR0pSajRZMy9JekNMb2NxNVlpSTR3cmEzN2E5WWQrQjVlc2JjOVEzY3dpQ1hXWHNJc2pQb2daYUl3ZWxZcUlnV2NScnArMUpNdVZjVjJwN09ERVlTN0pLOWpSYk1wQ3JzTzFEUnBPWEVHMDhNem1UbmtrVjc0dVlxa21xVGNzQlBIcXRUT3htY01KN203bjNRTFJvOFhvTGZBeTlQd3RSanNsQjVQTjF2UDdCekpIRmlGbjJuaEk2YUgyTlhQQU1oRm9oL3pyazcrVWpmYjJG/attach/object/43132f357898b47a0d5fed75ede13b34d4d17d21)
+<img src="./images/g/g-2.png" alt="g-1" style="zoom:50%;" />
 
 把代码稍微改一下，找下其中的原因
 
@@ -52,7 +50,7 @@ console.warn(searchItems)    // 这一行看下得到的数组
 this.setState({selectItems: searchItems})
 ```
 
-![img](https://www.kdocs.cn/api/v3/office/copy/YVlpUklIeFE0WHN3SGJHSEVGbEVIaDYvS2wvK2dHYXlHc1VtdGJIQ3djTnlOR0pSajRZMy9JekNMb2NxNVlpSTR3cmEzN2E5WWQrQjVlc2JjOVEzY3dpQ1hXWHNJc2pQb2daYUl3ZWxZcUlnV2NScnArMUpNdVZjVjJwN09ERVlTN0pLOWpSYk1wQ3JzTzFEUnBPWEVHMDhNem1UbmtrVjc0dVlxa21xVGNzQlBIcXRUT3htY01KN203bjNRTFJvOFhvTGZBeTlQd3RSanNsQjVQTjF2UDdCekpIRmlGbjJuaEk2YUgyTlhQQU1oRm9oL3pyazcrVWpmYjJG/attach/object/75be51e8f7fe27d6a1bfe3fc8ee45007bb6f1ade)
+<img src="./images/g/g-3.png" alt="g-1" style="zoom:50%;" />
 
 诡异的现象出现了，console之后文本及富文本是true，但是if却没有进去，而且最后结果空数组也是如此
 
@@ -71,7 +69,7 @@ console.warn(searchItems)    // 这一行看下得到的数组
 this.setState({selectItems: searchItems})
 ```
 
-![img](https://www.kdocs.cn/api/v3/office/copy/YVlpUklIeFE0WHN3SGJHSEVGbEVIaDYvS2wvK2dHYXlHc1VtdGJIQ3djTnlOR0pSajRZMy9JekNMb2NxNVlpSTR3cmEzN2E5WWQrQjVlc2JjOVEzY3dpQ1hXWHNJc2pQb2daYUl3ZWxZcUlnV2NScnArMUpNdVZjVjJwN09ERVlTN0pLOWpSYk1wQ3JzTzFEUnBPWEVHMDhNem1UbmtrVjc0dVlxa21xVGNzQlBIcXRUT3htY01KN203bjNRTFJvOFhvTGZBeTlQd3RSanNsQjVQTjF2UDdCekpIRmlGbjJuaEk2YUgyTlhQQU1oRm9oL3pyazcrVWpmYjJG/attach/object/8564f093e6df7be984a1b3e32cfccdd7adb4491b)
+<img src="./images/g/g-4.png" alt="g-1" style="zoom:50%;" />
 
 ***\*console的位置放在下面，得到的结果却是对的，然而reg.test(item.text)是false\****
 
@@ -85,13 +83,13 @@ this.setState({selectItems: searchItems})
 
 参考https://stackoverflow.com/questions/2630418/javascript-regex-returning-true-then-false-then-true-etc的一个解答
 
-![img](https://www.kdocs.cn/api/v3/office/copy/YVlpUklIeFE0WHN3SGJHSEVGbEVIaDYvS2wvK2dHYXlHc1VtdGJIQ3djTnlOR0pSajRZMy9JekNMb2NxNVlpSTR3cmEzN2E5WWQrQjVlc2JjOVEzY3dpQ1hXWHNJc2pQb2daYUl3ZWxZcUlnV2NScnArMUpNdVZjVjJwN09ERVlTN0pLOWpSYk1wQ3JzTzFEUnBPWEVHMDhNem1UbmtrVjc0dVlxa21xVGNzQlBIcXRUT3htY01KN203bjNRTFJvOFhvTGZBeTlQd3RSanNsQjVQTjF2UDdCekpIRmlGbjJuaEk2YUgyTlhQQU1oRm9oL3pyazcrVWpmYjJG/attach/object/9d7a96d36e1b04fbf405931930089bafe4d6ee82)
+<img src="./images/g/g-5.png" alt="g-1" style="zoom:50%;" />
 
 看到这里，相信你应该就能知道，为什么代码中console写在前后不同位置得到的结果也不一样了
 
 直接在控制台也能复现复现现象
 
-![img](https://www.kdocs.cn/api/v3/office/copy/YVlpUklIeFE0WHN3SGJHSEVGbEVIaDYvS2wvK2dHYXlHc1VtdGJIQ3djTnlOR0pSajRZMy9JekNMb2NxNVlpSTR3cmEzN2E5WWQrQjVlc2JjOVEzY3dpQ1hXWHNJc2pQb2daYUl3ZWxZcUlnV2NScnArMUpNdVZjVjJwN09ERVlTN0pLOWpSYk1wQ3JzTzFEUnBPWEVHMDhNem1UbmtrVjc0dVlxa21xVGNzQlBIcXRUT3htY01KN203bjNRTFJvOFhvTGZBeTlQd3RSanNsQjVQTjF2UDdCekpIRmlGbjJuaEk2YUgyTlhQQU1oRm9oL3pyazcrVWpmYjJG/attach/object/757b5f52ba102fc508f97cf98bc20519954271b5)
+<img src="./images/g/g-6.png" alt="g-6" style="zoom:50%;" />
 
 ## 那么如何解决这个问题？
 
@@ -113,7 +111,7 @@ const searchItems = this.selectItems.filter(item => item.text.indexOf(searchInpu
 this.setState({selectItems: searchItems})
 ```
 
-![img](https://www.kdocs.cn/api/v3/office/copy/YVlpUklIeFE0WHN3SGJHSEVGbEVIaDYvS2wvK2dHYXlHc1VtdGJIQ3djTnlOR0pSajRZMy9JekNMb2NxNVlpSTR3cmEzN2E5WWQrQjVlc2JjOVEzY3dpQ1hXWHNJc2pQb2daYUl3ZWxZcUlnV2NScnArMUpNdVZjVjJwN09ERVlTN0pLOWpSYk1wQ3JzTzFEUnBPWEVHMDhNem1UbmtrVjc0dVlxa21xVGNzQlBIcXRUT3htY01KN203bjNRTFJvOFhvTGZBeTlQd3RSanNsQjVQTjF2UDdCekpIRmlGbjJuaEk2YUgyTlhQQU1oRm9oL3pyazcrVWpmYjJG/attach/object/9c0acb58fdda75a9620f9c3b7d31667073ae641e)
+<img src="./images/g/g-7.png" alt="g-7" style="zoom:50%;" />
 
 ### 3. 这个场景不用/g，直接去掉
 
