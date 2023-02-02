@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: http://resource.muyiy.cn/image/javascript.gif
+heroImage: https://resource.muyiy.cn/image/javascript.gif
 actions:
 - text: 项目简介
   link: /guide.html
